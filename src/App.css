@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+:root{
+  --mainColor: #ffffff;
+  --mainDimColor: rgba(228,228,228);
+  --blackScreen:rgba(17,17,17,0.2);
+  --boxShadow: 0 0 20px rgba(26,26,26,0.1), 0 0 40px rgba(26,26,26,0.1), 0 0 80px rgba(26,26,26,0.1);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  font: 400 16px "Poppins", sans-serif;
+}
+.container{
+  min-width: 100vw;
+  min-height: 100vh;
+  font: 400 1rem "Poppins", sans-serif;
+  color: var(--mainColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backgroundVideo{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: saturate(2.5);
+}
+.blackScreen{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  background: var(--blackScreen);
+}
+.musicContainer{
+  height: auto;
+  width: 350px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: var(--boxShadow);
+  backdrop-filter: blur(15px);
+}
+.musicPlayer{
+  margin: 0;
+  margin-bottom: 10px;
+  color: var(--mainDimColor);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.musicTitle{
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.musicArtist{
+  margin: 0 auto;
+  color: var(--mainDimColor);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#songAvatar{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 15px 0;
+  position: relative;
+  cursor: pointer;
+  animation: animateAvatar 0.5s linear infinite;
+}
+.objectFitCover{
+  object-fit: cover;
+}
+.objectFitContain{
+  object-fit: contain;
+}
+@keyframes animateAvatar {
+  0%,100%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.03);
+  }
+}
+.musicTimerBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-weight: 600;
+}
+.musicProgressBar{
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  outline: none;
+  margin: 3px 0 15px 0;
+  filter: hue-rotate(20deg);
+}
+.musicControlerBox{
+  position: relative; 
+  font-size: 1.25rem;
+  color: var(--mainColor);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnPlay{
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 10px 15px;
+  color: var(--mainColor);
+  cursor: pointer;
+}
+.changeBackgroundBtn{
+  position: absolute;
+  background: var(--blackScreen);
+  box-shadow: var(--boxShadow);
+  backdrop-filter: blur(15px);
+  width: 200px;
+  height: 15px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-radius: 10px 10px 0 0;
+  z-index: 10;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--mainColor);
+  text-align: center;
+  font-weight: 600;
+  padding: 10px 0 0 0;
+}
+.changeBackgroundBtn:hover{
+  height: 40px;
+  color: var(--mainColor);
+}
+
+@media screen and (max-width:767px) and (min-width:601px) and (max-height: 600px) {
+  .musicContainer{width: 300px;padding: 10px 20px;}
+  .musicPlayer{margin-bottom: 5px;}
+  #songAvatar{margin: 5px 0;height: 100px;width: 100px;}
+  .musicProgressBar{margin:0 0 10px 0;}
+  .btnPlay{margin: 5px 15px;}
+}
+@media screen and (max-height: 600px) {
+  .musicContainer{width: 300px;padding: 10px 20px;}
+  .musicPlayer{margin-bottom: 5px;}
+  #songAvatar{margin: 5px 0;height: 100px;width: 100px;}
+  .musicProgressBar{margin:0 0 10px 0;}
+  .btnPlay{margin: 5px 15px;}
+}
