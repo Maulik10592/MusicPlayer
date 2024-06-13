@@ -161,7 +161,7 @@ body{
   .musicProgressBar{margin:0 0 10px 0;}
   .btnPlay{margin: 5px 15px;}
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 500px) {
   .musicContainer{width: 300px;padding: 10px 20px;}
   .musicPlayer{margin-bottom: 5px;}
   #songAvatar{margin: 5px 0;height: 100px;width: 100px;}
