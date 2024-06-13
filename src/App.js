@@ -29,34 +29,81 @@ function App() {
   // song list
   const musicAPI = [
     {
+      id: 1,
       songName: 'Chasing',
       songArtist: 'NEFFEX',
       songSrc: './Assets/Songs/Chasing_NEFFEX.mp3',
       songAvatar: './Assets/Images/Chasing.jpg',
     },
     {
+      id: 2,
       songName: 'AURORA',
       songArtist: 'Runaway',
       songSrc: './Assets/Songs/AURORA_Runaway.mp3',
       songAvatar: './Assets/Images/AURORA.jpg',
     },
     {
+      id: 3,
       songName: 'Baby Doll',
       songArtist: 'Meet Bros',
       songSrc: './Assets/Songs/Baby_doll_ meet_bros.mp3',
       songAvatar: './Assets/Images/Baby_doll.jpg',
     },
     {
+      id: 4,
       songName: 'Inspired',
       songArtist: 'NEFFEX',
       songSrc: './Assets/Songs/Inspired_NEFFEX.mp3',
       songAvatar: './Assets/Images/Inspired.jpg',
     },
     {
+      id: 5,
       songName: 'Catch Me If I Fall',
       songArtist: 'NEFFEX',
       songSrc: './Assets/Songs/Catch_Me_If_I_Fall_NEFFEX.mp3',
       songAvatar: './Assets/Images/Catch_Me_If_I_Fall.jpg',
+    },    
+    {
+      id: 6,
+      songName: 'As You Were',
+      songArtist: 'TrackTribe',
+      songSrc: './Assets/Songs/As You Were - TrackTribe.mp3',
+      songAvatar: './Assets/Images/As_You_Were.jpg',
+    },
+    {
+      id: 7,
+      songName: 'Coast',
+      songArtist: 'Anno Domini Beats',
+      songSrc: './Assets/Songs/Coast - Anno Domini Beats.mp3',
+      songAvatar: './Assets/Images/Coast.jpg',
+    },
+    {
+      id: 8,
+      songName: 'Here it Comes',
+      songArtist: 'TrackTribe',
+      songSrc: './Assets/Songs/Here it Comes - TrackTribe.mp3',
+      songAvatar: './Assets/Images/Here_It_Comes.jpg',
+    },
+    {
+      id: 9,
+      songName: 'No Mercy',
+      songArtist: 'TrackTribe',
+      songSrc: './Assets/Songs/No Mercy - TrackTribe.mp3',
+      songAvatar: './Assets/Images/No_Mercy.jpg',
+    },
+    {
+      id: 10,
+      songName: 'Put It',
+      songArtist: 'TrackTribe',
+      songSrc: './Assets/Songs/Put It - TrackTribe.mp3',
+      songAvatar: './Assets/Images/Put_It.jpg',
+    },
+    {
+      id: 11,
+      songName: 'Read All Over',
+      songArtist: 'Nathan Moore',
+      songSrc: './Assets/Songs/Read All Over - Nathan Moore.mp3',
+      songAvatar: './Assets/Images/Read_All_Over.jpg',
     },
   ]
 
