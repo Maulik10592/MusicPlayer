@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 :root{
   --mainColor: #ffffff;
+  --black-color: #000000;
   --mainDimColor: rgba(228,228,228);
   --blackScreen:rgba(17,17,17,0.2);
   --boxShadow: 0 0 20px rgba(26,26,26,0.1), 0 0 40px rgba(26,26,26,0.1), 0 0 80px rgba(26,26,26,0.1);
@@ -132,7 +133,7 @@ body{
 }
 .changeBackgroundBtn{
   position: absolute;
-  background: var(--blackScreen);
+  background: var(--mainColor);
   box-shadow: var(--boxShadow);
   backdrop-filter: blur(15px);
   width: 200px;
@@ -144,14 +145,14 @@ body{
   z-index: 10;
   transition: 0.3s;
   cursor: pointer;
-  color: var(--mainColor);
+  color: var(--black-color);
   text-align: center;
   font-weight: 600;
   padding: 10px 0 0 0;
 }
 .changeBackgroundBtn:hover{
   height: 40px;
-  color: var(--mainColor);
+  color: var(--black-color);
 }
 
 @media screen and (max-width:767px) and (min-width:601px) and (max-height: 600px) {

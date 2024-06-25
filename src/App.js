@@ -1,7 +1,33 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+//import axios from 'axios';
 import './App.css';
 
 function App() {
+
+  // const [music, setMusic] = useState([]);
+  
+  // const getMusic = async() => {
+  //   const url = 'https://spotify23.p.rapidapi.com/playlist/?id=37i9dQZF1DX4Wsb4d7NKfP';
+  //     const options = {
+  //       method: 'GET',
+  //       headers: {
+  //         'x-rapidapi-key': 'e01d730154mshb3713b70c3d86b6p16500cjsn1beb876cff66',
+  //         'x-rapidapi-host': 'spotify23.p.rapidapi.com'
+  //       }
+  //     };
+
+  //     try {
+  //       const response = await fetch(url, options);
+  //       const result = await response.text();
+  //       console.log(result);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  // }
+
+  // useEffect(()=>{
+  //   getMusic();
+  // });
 
   // default song play
   const [currentMusicDetails, setCurrentMusicDetails] = useState({
